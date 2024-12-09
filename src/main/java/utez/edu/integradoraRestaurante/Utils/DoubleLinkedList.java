@@ -14,10 +14,6 @@ public class DoubleLinkedList<T> {
         }
     }
 
-
-
-
-
     // 1) Atributos de clase
     DoubleNode<T> head;
     DoubleNode<T> tail;
