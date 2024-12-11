@@ -10,7 +10,8 @@ public enum Customer {
     ABRIL(6,"Abril","Villa"),
     ANTONIO(7,"Antonio","Catrejon"),
     BIGVAI(8,"Bigvai","Villanueva"),
-    Juan(9,"Juan","Perez");
+    JUAN(9,"Juan","Perez"),
+    JESUS(10,"Jesus", "Galvez");
 
 
     // Contructor, getters y setters (No es necesario Modificar)
@@ -36,4 +37,5 @@ public enum Customer {
     public String getLastName() {
         return lastName;
     }
+
 }

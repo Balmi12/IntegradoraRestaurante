@@ -2,7 +2,7 @@ package utez.edu.integradoraRestaurante.Utils;
 
 public class DoubleLinkedList<T> {
     // Nodos Dobles
-     private class DoubleNode<T> {
+    class DoubleNode<T> {
         T data;
         DoubleNode next;
         DoubleNode previous;
