@@ -5,7 +5,8 @@ import java.util.Random;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.Data;
 import utez.edu.integradoraRestaurante.Utils.DoubleLinkedList;
-import utez.edu.integradoraRestaurante.Utils.Serializer;
+
+import utez.edu.integradoraRestaurante.Utils.DoubleLinkedListSerializer;
 import utez.edu.integradoraRestaurante.customer.Customer;
 import utez.edu.integradoraRestaurante.food.Food;
 
@@ -16,7 +17,8 @@ public class Order {
 
     private Long id;
     private Customer customer;
-    @JsonSerialize(using = Serializer.class)
+
+    @JsonSerialize(using = DoubleLinkedListSerializer.class)
     private DoubleLinkedList<Food> comidas = new DoubleLinkedList<>();
     private double total;
 
