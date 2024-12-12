@@ -35,6 +35,7 @@ public enum Food {
     BROWNIE(29, "Brownie", 30.00, "Con nueces", "https://cdn.recetasderechupete.com/wp-content/uploads/2019/11/Brownie.jpg");
 
 
+
     // Atributos, constructor y getters, (no es necesario modificarlo)
     private final int id;
     private final String name;

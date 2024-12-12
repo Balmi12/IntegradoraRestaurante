@@ -44,12 +44,14 @@ public class OrderService {
     }
 
     public DoubleLinkedList<Food> comidasAleatorias() {
-        Food[] foodsPool = new Food[5];
+        Random r = new Random();
+        int ra = r.nextInt(1,20);
+        Food[] foodsPool = new Food[ra];
         for (int i = 0; i < foodsPool.length; i++) {
             foodsPool[i] = Food.values()[random.nextInt(Food.values().length)];
         }
         DoubleLinkedList<Food> foods = new DoubleLinkedList<>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < ra; i++) {
             foods.add(foodsPool[i]);
         }
         return foods;
